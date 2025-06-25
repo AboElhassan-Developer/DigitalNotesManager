@@ -4283,23 +4283,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\7MDI\\.nuget\\packages\\": {},
+    "C:\\Users\\original\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ITI\\Projects\\C# Project\\DigitalNotesManager\\DigitalNotesManager\\DigitalNotesManager.csproj",
+      "projectUniqueName": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\DigitalNotesManager.csproj",
       "projectName": "DigitalNotesManager",
-      "projectPath": "D:\\ITI\\Projects\\C# Project\\DigitalNotesManager\\DigitalNotesManager\\DigitalNotesManager.csproj",
-      "packagesPath": "C:\\Users\\7MDI\\.nuget\\packages\\",
-      "outputPath": "D:\\ITI\\Projects\\C# Project\\DigitalNotesManager\\DigitalNotesManager\\obj\\",
+      "projectPath": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\DigitalNotesManager.csproj",
+      "packagesPath": "C:\\Users\\original\\.nuget\\packages\\",
+      "outputPath": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\7MDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\original\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4308,6 +4308,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

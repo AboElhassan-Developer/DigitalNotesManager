@@ -17,7 +17,7 @@ namespace DigitalNotesManager.Models
         [StringLength(50)]
         public string CategoryName { get; set; }
 
-        public int UserID { get; set; }
+        public  int UserID { get; set; }
         [ForeignKey("UserID")] 
         public virtual User User { get; set; } 
 
@@ -26,6 +26,11 @@ namespace DigitalNotesManager.Models
         public Category()
         {
             Notes = new HashSet<Note>();
-        }
+        } 
+
+
+
+
+
     }
 }

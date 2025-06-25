@@ -3,6 +3,7 @@ using DigitalNotesManager.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace DigitalNotesManager
 {
@@ -22,6 +23,11 @@ namespace DigitalNotesManager
             }
         }
 
+        private static bool IsPasswordStrong(string password)
+        {
+            return !string.IsNullOrEmpty(password) && password.Length >= 6;
+        }
+
         public static bool RegisterUser(string username, string password)
         {
             try
@@ -31,7 +37,13 @@ namespace DigitalNotesManager
                     if (db.Users.Any(u => u.Username == username))
                     {
                         MessageBox.Show("Username already exists.");
-                        return false; 
+                        return false;
+                    }
+
+                    if (!IsPasswordStrong(password))
+                    {
+                        MessageBox.Show("Password must be at least 6 characters.");
+                        return false;
                     }
 
                     var user = new User
@@ -39,15 +51,19 @@ namespace DigitalNotesManager
                         Username = username,
                         PasswordHash = HashPassword(password)
                     };
-                    db.Users.Add(user); 
-                    db.SaveChanges();  
-                    return true; 
+                    db.Users.Add(user);
+                    db.SaveChanges();
+                    return true;
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error during registration: " + ex.ToString());   
-                return false; 
+#if DEBUG
+                MessageBox.Show("Error during registration: " + ex.ToString());
+#else
+                MessageBox.Show("An error occurred during registration.");
+#endif
+                return false;
             }
         }
 
@@ -63,16 +79,41 @@ namespace DigitalNotesManager
                     {
                         if (user.PasswordHash == HashPassword(password))
                         {
-                            return user.UserID; 
+                            return user.UserID;
                         }
                     }
-                    return 0; 
+                    return 0;
                 }
             }
             catch (Exception ex)
             {
+#if DEBUG
                 MessageBox.Show("Error during login validation: " + ex.ToString());
-                return 0; 
+#else
+                MessageBox.Show("An error occurred during login.");
+#endif
+                return 0;
+            }
+        }
+
+        public static int GetUserIdByUsername(string username)
+        {
+            try
+            {
+                using (var db = new ApplicationDbContext())
+                {
+                    var user = db.Users.FirstOrDefault(u => u.Username == username);
+                    return user?.UserID ?? 0;
+                }
+            }
+            catch (Exception ex)
+            {
+#if DEBUG
+                MessageBox.Show("Error retrieving user ID: " + ex.Message);
+#else
+                MessageBox.Show("An error occurred while retrieving user ID.");
+#endif
+                return 0;
             }
         }
 
@@ -84,13 +125,13 @@ namespace DigitalNotesManager
             }
 
             var category = db.Categories
-                             .FirstOrDefault(c => c.CategoryName == categoryName && c.UserID == userId);
+                             .FirstOrDefault(c => c.CategoryName.ToLower() == categoryName.ToLower() && c.UserID == userId);
 
-            if (category != null) 
+            if (category != null)
             {
-                return category.CategoryID; 
+                return category.CategoryID;
             }
-            else 
+            else
             {
                 var newCategory = new Category
                 {
@@ -99,7 +140,7 @@ namespace DigitalNotesManager
                 };
                 db.Categories.Add(newCategory);
                 db.SaveChanges();
-                return newCategory.CategoryID; 
+                return newCategory.CategoryID;
             }
         }
 
@@ -109,7 +150,7 @@ namespace DigitalNotesManager
             {
                 using (var db = new ApplicationDbContext())
                 {
-                    int? categoryId = GetOrCreateCategoryID(categoryName, userId, db); 
+                    int? categoryId = GetOrCreateCategoryID(categoryName, userId, db);
 
                     var note = new Note
                     {
@@ -148,15 +189,7 @@ namespace DigitalNotesManager
                         noteToUpdate.Content = content;
                         noteToUpdate.CategoryID = categoryId;
                         noteToUpdate.ReminderDate = reminderDate;
-
-                        if (reminderDate.HasValue)
-                        {
-                            noteToUpdate.IsReminderDismissed = false;
-                        }
-                        else
-                        {
-                            noteToUpdate.IsReminderDismissed = true;
-                        }
+                        noteToUpdate.IsReminderDismissed = !reminderDate.HasValue;
 
                         db.SaveChanges();
                         return true;
@@ -178,7 +211,7 @@ namespace DigitalNotesManager
                 using (var db = new ApplicationDbContext())
                 {
                     var query = db.Notes
-                                  .Include(n => n.Category) 
+                                  .Include(n => n.Category)
                                   .Where(n => n.UserID == userId);
 
                     if (!string.IsNullOrWhiteSpace(searchTerm))
@@ -187,7 +220,7 @@ namespace DigitalNotesManager
                                                  n.Content.Contains(searchTerm));
                     }
 
-                    if (!string.IsNullOrWhiteSpace(filterCategoryName) && filterCategoryName != "All Categories") 
+                    if (!string.IsNullOrWhiteSpace(filterCategoryName) && filterCategoryName != "All Categories")
                     {
                         query = query.Where(n => n.Category != null && n.Category.CategoryName == filterCategoryName);
                     }
@@ -206,21 +239,25 @@ namespace DigitalNotesManager
             }
             catch (Exception ex)
             {
+#if DEBUG
                 MessageBox.Show("Error fetching notes (EF Core with Filters): " + ex.ToString());
+#else
+                MessageBox.Show("Error fetching notes.");
+#endif
                 return new List<NoteDisplayItem>();
             }
         }
 
-        public static NoteFullDetails GetNoteDetails(int noteId, int userId)    
+        public static NoteFullDetails GetNoteDetails(int noteId, int userId)
         {
             try
             {
                 using (var db = new ApplicationDbContext())
                 {
                     return db.Notes
-                             .Where(n => n.NoteID == noteId && n.UserID == userId) 
-                             .Include(n => n.Category) 
-                             .Select(n => new NoteFullDetails 
+                             .Where(n => n.NoteID == noteId && n.UserID == userId)
+                             .Include(n => n.Category)
+                             .Select(n => new NoteFullDetails
                              {
                                  NoteID = n.NoteID,
                                  Title = n.Title,
@@ -228,15 +265,16 @@ namespace DigitalNotesManager
                                  CategoryName = n.Category != null ? n.Category.CategoryName : "Uncategorized",
                                  ReminderDate = n.ReminderDate
                              })
-                             .FirstOrDefault(); 
+                             .FirstOrDefault();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error in GetNoteDetails (EF Core): " + ex.ToString());
-                return null; 
+                return null;
             }
         }
+
         public static List<string> GetUserCategoryNames(int userId)
         {
             try
@@ -244,16 +282,16 @@ namespace DigitalNotesManager
                 using (var db = new ApplicationDbContext())
                 {
                     return db.Categories
-                             .Where(c => c.UserID == userId) 
-                             .OrderBy(c => c.CategoryName) 
-                             .Select(c => c.CategoryName) 
-                             .ToList(); 
+                             .Where(c => c.UserID == userId)
+                             .OrderBy(c => c.CategoryName)
+                             .Select(c => c.CategoryName)
+                             .ToList();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error fetching categories (EF Core): " + ex.ToString());
-                return new List<string>(); 
+                return new List<string>();
             }
         }
 
@@ -267,9 +305,9 @@ namespace DigitalNotesManager
 
                     if (noteToDelete != null)
                     {
-                        db.Notes.Remove(noteToDelete); 
-                        db.SaveChanges(); 
-                        return true; 
+                        db.Notes.Remove(noteToDelete);
+                        db.SaveChanges();
+                        return true;
                     }
                     return false;
                 }
@@ -277,7 +315,7 @@ namespace DigitalNotesManager
             catch (Exception ex)
             {
                 MessageBox.Show("Error deleting note from DB: " + ex.ToString());
-                return false; 
+                return false;
             }
         }
 
@@ -289,13 +327,13 @@ namespace DigitalNotesManager
                 {
                     DateTime currentTime = DateTime.Now;
                     return db.Notes
-                             .Where(n => n.UserID == userId &&       
-                                         n.ReminderDate != null &&   
-                                         n.ReminderDate <= currentTime && 
-                                         n.IsReminderDismissed == false) 
-                             .Include(n => n.Category) 
-                             .OrderBy(n => n.ReminderDate) 
-                             .Select(n => new NoteFullDetails 
+                             .Where(n => n.UserID == userId &&
+                                         n.ReminderDate != null &&
+                                         n.ReminderDate <= currentTime &&
+                                         n.IsReminderDismissed == false)
+                             .Include(n => n.Category)
+                             .OrderBy(n => n.ReminderDate)
+                             .Select(n => new NoteFullDetails
                              {
                                  NoteID = n.NoteID,
                                  Title = n.Title,
@@ -336,6 +374,37 @@ namespace DigitalNotesManager
             }
         }
 
-    }
+        public static bool AddCategory(string categoryName, int userId)
+        {
+            try
+            {
+                using (var db = new ApplicationDbContext())
+                {
+                    var existingCategory = db.Categories
+                        .FirstOrDefault(c => c.CategoryName.ToLower() == categoryName.ToLower() && c.UserID == userId);
 
+                    if (existingCategory != null)
+                    {
+                        MessageBox.Show("Category already exists.");
+                        return false;
+                    }
+
+                    var newCategory = new Category
+                    {
+                        CategoryName = categoryName,
+                        UserID = userId
+                    };
+
+                    db.Categories.Add(newCategory);
+                    db.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error adding category: " + ex.Message);
+                return false;
+            }
+        }
+    }
 }

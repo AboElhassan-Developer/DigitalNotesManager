@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigitalNotesManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8180cd0ea1f5062409e88479dbcacfcf6d09f306")]
 [assembly: System.Reflection.AssemblyProductAttribute("DigitalNotesManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigitalNotesManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

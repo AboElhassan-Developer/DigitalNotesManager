@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\down\\DigitalNotesManager_V01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalNotesManager\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalNotesManager\\Add_Category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalNotesManager\\Add_Category.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\AboutForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalNotesManager\\AboutForm.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\AboutForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalNotesManager\\AboutForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Models\\Note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalNotesManager\\Models\\Note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DigitalNotesManager\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Program.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\Program.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Program.cs",
+              "RelativeToolTip": "DigitalNotesManager\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T06:08:40.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Add_Category.Designer.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.Designer.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\Add_Category.Designer.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.Designer.cs",
+              "RelativeToolTip": "DigitalNotesManager\\Add_Category.Designer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T06:02:59.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Add_Category.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\Add_Category.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.cs",
+              "RelativeToolTip": "DigitalNotesManager\\Add_Category.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAwEcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T06:02:04.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AboutForm.Designer.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\AboutForm.Designer.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\AboutForm.Designer.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\AboutForm.Designer.cs",
+              "RelativeToolTip": "DigitalNotesManager\\AboutForm.Designer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwGwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T06:00:51.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AboutForm.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\AboutForm.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\AboutForm.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\AboutForm.cs",
+              "RelativeToolTip": "DigitalNotesManager\\AboutForm.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T06:00:24.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\Models\\User.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Models\\User.cs",
+              "RelativeToolTip": "DigitalNotesManager\\Models\\User.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T05:44:48.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Note.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Models\\Note.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\Models\\Note.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Models\\Note.cs",
+              "RelativeToolTip": "DigitalNotesManager\\Models\\Note.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T05:44:46.033Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

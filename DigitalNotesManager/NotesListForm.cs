@@ -1,4 +1,5 @@
 ﻿using DigitalNotesManager.DTO;
+using DigitalNotesManager.Models;
 using System.ComponentModel;
 
 namespace DigitalNotesManager
@@ -79,7 +80,7 @@ namespace DigitalNotesManager
                 List<NoteDisplayItem> userNotesList = DataAccess.GetUserNotes(this.CurrentUserID, searchTerm, selectedCategory);
 
                 dgvNotes.DataSource = null;
-                dgvNotes.DataSource = userNotesList; 
+                dgvNotes.DataSource = userNotesList;
 
                 if (dgvNotes.Columns.Count > 0)
                 {
@@ -100,7 +101,7 @@ namespace DigitalNotesManager
                 dgvNotes.DataSource = null;
             }
 
-             if (btnDeleteNote != null)
+            if (btnDeleteNote != null)
             {
                 btnDeleteNote.Enabled = dgvNotes.SelectedRows.Count > 0;
             }
@@ -160,5 +161,63 @@ namespace DigitalNotesManager
                 MessageBox.Show("Please select a note to delete.", "No Note Selected", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void panelSearch_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+        ////////////////////////////////////////////////////// category  
+        ///
+
+        //private void NotesListForm_Load(object sender, EventArgs e)
+        //{
+        //    LoadCategoriesIntoComboBox();
+        //}
+
+        //private void LoadCategoriesIntoComboBox()
+        //{
+        //    var categories = DataAccess.GetCategories();
+
+        //    cmbFilterCategory.DataSource = categories;
+        //    cmbFilterCategory.DisplayMember = "Name"; // اسم العمود اللي عايز تعرضه
+        //    cmbFilterCategory.ValueMember = "CategoryID"; // العمود اللي يمثّل القيمة
+        //}
+
+
+
+
+
+        //private void cmbFilterCategory_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    int selectedCategoryId = (int)cmbFilterCategory.SelectedValue;
+
+        //    var filteredNotes = DataAccess.GetNotesByCategory(selectedCategoryId, CurrentUserID);
+
+        //    dataGridViewNotes.DataSource = filteredNotes;
+        //}
+
+
+
+
+        //public static List<NoteFullDetails> GetNotesByCategory(int categoryId, int userId)
+        //{
+        //    using (var context = new ApplicationDbContext())
+        //    {
+        //        return context.Notes
+        //                      .Where(n => n.CategoryID == categoryId && n.UserID == userId)
+        //                      .Select(n => new NoteFullDetails
+        //                      {
+        //                          NoteID = n.NoteID,
+        //                          Title = n.Title,
+        //                          CategoryName = n.Category.CategoryName,
+        //                          //CreationDate = n.CreationDate,
+        //                          ReminderDate = n.ReminderDate
+        //                      }).ToList();
+        //    }
+        //}
+
+
     }
 }

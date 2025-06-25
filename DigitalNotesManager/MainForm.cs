@@ -80,7 +80,7 @@ namespace DigitalNotesManager
         {
             openFileDialog.Filter = "Rich Text Files (*.rtf)|*.rtf|Text Files (*.txt)|*.txt|All files (*.*)|*.*";
             openFileDialog.DefaultExt = "rtf";
-            openFileDialog.FileName = ""; 
+            openFileDialog.FileName = "";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -96,7 +96,7 @@ namespace DigitalNotesManager
                         {
                             tempRtb.LoadFile(filePath, RichTextBoxStreamType.RichText);
                         }
-                        else    
+                        else
                         {
                             tempRtb.LoadFile(filePath, RichTextBoxStreamType.PlainText);
                         }
@@ -104,14 +104,14 @@ namespace DigitalNotesManager
                     }
 
                     NoteEditorForm newImportedNote = new NoteEditorForm();
-                    newImportedNote.CurrentUserID = this.CurrentUserID; 
+                    newImportedNote.CurrentUserID = this.CurrentUserID;
 
                     newImportedNote.NoteToLoad = new NoteFullDetails
                     {
                         NoteID = 0,
                         Title = fileTitle,
                         RtfContent = fileContent,
-                        CategoryName = null, 
+                        CategoryName = null,
                         ReminderDate = null
                     };
 
@@ -192,7 +192,7 @@ namespace DigitalNotesManager
             AboutForm aboutForm = new AboutForm();
             aboutForm.ShowDialog(this); // ShowDialog
         }
-        
+
         private void menuEditFormat_Click(object sender, EventArgs e)
         {
             if (this.ActiveMdiChild != null)
@@ -203,13 +203,19 @@ namespace DigitalNotesManager
                 }
                 else
                 {
-                     MessageBox.Show("Please select a note editor window to format text.", "Information");
+                    MessageBox.Show("Please select a note editor window to format text.", "Information");
                 }
             }
             else
             {
-                 MessageBox.Show("No note is currently open to format.", "Information");
+                MessageBox.Show("No note is currently open to format.", "Information");
             }
+        }
+
+        private void addCategoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add_Category add_Category = new Add_Category(this.CurrentUserID);
+            add_Category.Show();
         }
     }
 

@@ -63,15 +63,17 @@
             panelSearch.MaximumSize = new Size(0, 50);
             panelSearch.MinimumSize = new Size(0, 50);
             panelSearch.Name = "panelSearch";
-            panelSearch.Size = new Size(800, 50);
+            panelSearch.Size = new Size(839, 50);
             panelSearch.TabIndex = 2;
+            panelSearch.Paint += panelSearch_Paint;
             // 
             // btnDeleteNote
             // 
             btnDeleteNote.Enabled = false;
-            btnDeleteNote.Location = new Point(654, 11);
+            btnDeleteNote.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            btnDeleteNote.Location = new Point(676, 12);
             btnDeleteNote.Name = "btnDeleteNote";
-            btnDeleteNote.Size = new Size(134, 23);
+            btnDeleteNote.Size = new Size(134, 31);
             btnDeleteNote.TabIndex = 5;
             btnDeleteNote.Text = "Delete Selected Note";
             btnDeleteNote.UseVisualStyleBackColor = true;
@@ -80,7 +82,7 @@
             // cmbFilterCategory
             // 
             cmbFilterCategory.FormattingEnabled = true;
-            cmbFilterCategory.Location = new Point(463, 12);
+            cmbFilterCategory.Location = new Point(485, 15);
             cmbFilterCategory.Name = "cmbFilterCategory";
             cmbFilterCategory.Size = new Size(175, 23);
             cmbFilterCategory.TabIndex = 4;
@@ -89,15 +91,16 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(354, 15);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label3.Location = new Point(345, 15);
             label3.Name = "label3";
-            label3.Size = new Size(100, 15);
+            label3.Size = new Size(133, 21);
             label3.TabIndex = 3;
             label3.Text = "Filter by Category";
             // 
             // btnSearchNotes
             // 
-            btnSearchNotes.Location = new Point(264, 11);
+            btnSearchNotes.Location = new Point(264, 16);
             btnSearchNotes.Name = "btnSearchNotes";
             btnSearchNotes.Size = new Size(75, 23);
             btnSearchNotes.TabIndex = 2;
@@ -107,7 +110,7 @@
             // 
             // txtSearchNotes
             // 
-            txtSearchNotes.Location = new Point(58, 12);
+            txtSearchNotes.Location = new Point(58, 15);
             txtSearchNotes.MaximumSize = new Size(200, 0);
             txtSearchNotes.MinimumSize = new Size(200, 0);
             txtSearchNotes.Name = "txtSearchNotes";
@@ -118,9 +121,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(10, 15);
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label2.Location = new Point(5, 19);
             label2.Name = "label2";
-            label2.Size = new Size(42, 15);
+            label2.Size = new Size(47, 17);
             label2.TabIndex = 0;
             label2.Text = "Search";
             // 
@@ -132,7 +136,7 @@
             dgvNotes.Location = new Point(0, 50);
             dgvNotes.Name = "dgvNotes";
             dgvNotes.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvNotes.Size = new Size(800, 400);
+            dgvNotes.Size = new Size(839, 383);
             dgvNotes.TabIndex = 3;
             dgvNotes.CellDoubleClick += dgvNotes_CellDoubleClick;
             dgvNotes.SelectionChanged += dgvNotes_SelectionChanged;
@@ -141,7 +145,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(839, 433);
             Controls.Add(dgvNotes);
             Controls.Add(panelSearch);
             Controls.Add(label1);

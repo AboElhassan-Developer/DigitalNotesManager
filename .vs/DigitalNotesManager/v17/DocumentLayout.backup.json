@@ -1,12 +1,212 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ITI\\Projects\\C# Project\\DigitalNotesManager\\",
-  "Documents": [],
+  "WorkspaceRootPath": "F:\\down\\DigitalNotesManager_V01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|f:\\down\\digitalnotesmanager_v01\\digitalnotesmanager\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|solutionrelative:digitalnotesmanager\\registerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|f:\\down\\digitalnotesmanager_v01\\digitalnotesmanager\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|solutionrelative:digitalnotesmanager\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|f:\\down\\digitalnotesmanager_v01\\digitalnotesmanager\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|solutionrelative:digitalnotesmanager\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|f:\\down\\digitalnotesmanager_v01\\digitalnotesmanager\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|solutionrelative:digitalnotesmanager\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|F:\\down\\DigitalNotesManager_V01\\digitalnotesmanager\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|solutionrelative:digitalnotesmanager\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|F:\\down\\DigitalNotesManager_V01\\digitalnotesmanager\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|solutionrelative:digitalnotesmanager\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|f:\\down\\digitalnotesmanager_v01\\digitalnotesmanager\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|solutionrelative:digitalnotesmanager\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|f:\\down\\digitalnotesmanager_v01\\digitalnotesmanager\\add_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|solutionrelative:digitalnotesmanager\\add_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|F:\\down\\DigitalNotesManager_V01\\digitalnotesmanager\\add_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|solutionrelative:digitalnotesmanager\\add_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|f:\\down\\digitalnotesmanager_v01\\digitalnotesmanager\\add_category.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|solutionrelative:digitalnotesmanager\\add_category.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|f:\\down\\digitalnotesmanager_v01\\digitalnotesmanager\\noteslistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C0339A6-DA03-44D6-9500-C6804BC2DD7D}|DigitalNotesManager\\DigitalNotesManager.csproj|solutionrelative:digitalnotesmanager\\noteslistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\LoginForm.Designer.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\LoginForm.Designer.cs",
+              "RelativeToolTip": "DigitalNotesManager\\LoginForm.Designer.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAUwJcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:56:26.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\LoginForm.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\LoginForm.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\LoginForm.cs",
+              "RelativeToolTip": "DigitalNotesManager\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:56:10.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\DataAccess.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\DataAccess.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\DataAccess.cs",
+              "RelativeToolTip": "DigitalNotesManager\\DataAccess.cs",
+              "ViewState": "AgIAAEYBAAAAAAAAAAA+wJoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:47:20.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterForm.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\RegisterForm.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\RegisterForm.cs",
+              "RelativeToolTip": "DigitalNotesManager\\RegisterForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:45:14.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterForm.cs [Design]",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\RegisterForm.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\RegisterForm.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\RegisterForm.cs [Design]",
+              "RelativeToolTip": "DigitalNotesManager\\RegisterForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:45:07.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterForm.Designer.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\RegisterForm.Designer.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\RegisterForm.Designer.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\RegisterForm.Designer.cs",
+              "RelativeToolTip": "DigitalNotesManager\\RegisterForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:44:51.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\LoginForm.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\LoginForm.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\LoginForm.cs [Design]",
+              "RelativeToolTip": "DigitalNotesManager\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:33:34.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Add_Category.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\Add_Category.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.cs",
+              "RelativeToolTip": "DigitalNotesManager\\Add_Category.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAMwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:26:18.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Add_Category.cs [Design]",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\Add_Category.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.cs [Design]",
+              "RelativeToolTip": "DigitalNotesManager\\Add_Category.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:26:15.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Add_Category.resx",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.resx",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\Add_Category.resx",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\Add_Category.resx",
+              "RelativeToolTip": "DigitalNotesManager\\Add_Category.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-25T20:26:06.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NotesListForm.Designer.cs",
+              "DocumentMoniker": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\NotesListForm.Designer.cs",
+              "RelativeDocumentMoniker": "DigitalNotesManager\\NotesListForm.Designer.cs",
+              "ToolTip": "F:\\down\\DigitalNotesManager_V01\\DigitalNotesManager\\NotesListForm.Designer.cs",
+              "RelativeToolTip": "DigitalNotesManager\\NotesListForm.Designer.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAUwKwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T20:11:53.939Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

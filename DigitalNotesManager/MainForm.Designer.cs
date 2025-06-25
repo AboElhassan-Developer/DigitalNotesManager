@@ -47,6 +47,7 @@
             menuEditPaste = new ToolStripMenuItem();
             toolStripMenuItem4 = new ToolStripSeparator();
             menuEditFormat = new ToolStripMenuItem();
+            addCategoryToolStripMenuItem = new ToolStripMenuItem();
             menuView = new ToolStripMenuItem();
             menuViewNotesList = new ToolStripMenuItem();
             toolStripMenuItem5 = new ToolStripSeparator();
@@ -128,7 +129,7 @@
             // 
             // menuEdit
             // 
-            menuEdit.DropDownItems.AddRange(new ToolStripItem[] { menuEditCut, toolStripMenuItem2, menuEditCopy, toolStripMenuItem3, menuEditPaste, toolStripMenuItem4, menuEditFormat });
+            menuEdit.DropDownItems.AddRange(new ToolStripItem[] { menuEditCut, toolStripMenuItem2, menuEditCopy, toolStripMenuItem3, menuEditPaste, toolStripMenuItem4, menuEditFormat, addCategoryToolStripMenuItem });
             menuEdit.Name = "menuEdit";
             menuEdit.Size = new Size(39, 20);
             menuEdit.Text = "&Edit";
@@ -138,50 +139,58 @@
             menuEditCut.Image = Properties.Resources.cut;
             menuEditCut.Name = "menuEditCut";
             menuEditCut.ShortcutKeys = Keys.Control | Keys.X;
-            menuEditCut.Size = new Size(144, 22);
+            menuEditCut.Size = new Size(147, 22);
             menuEditCut.Text = "&Cut";
             menuEditCut.Click += menuEditCut_Click;
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(141, 6);
+            toolStripMenuItem2.Size = new Size(144, 6);
             // 
             // menuEditCopy
             // 
             menuEditCopy.Image = Properties.Resources.copy;
             menuEditCopy.Name = "menuEditCopy";
             menuEditCopy.ShortcutKeys = Keys.Control | Keys.C;
-            menuEditCopy.Size = new Size(144, 22);
+            menuEditCopy.Size = new Size(147, 22);
             menuEditCopy.Text = "&Copy";
             menuEditCopy.Click += menuEditCopy_Click;
             // 
             // toolStripMenuItem3
             // 
             toolStripMenuItem3.Name = "toolStripMenuItem3";
-            toolStripMenuItem3.Size = new Size(141, 6);
+            toolStripMenuItem3.Size = new Size(144, 6);
             // 
             // menuEditPaste
             // 
             menuEditPaste.Image = Properties.Resources.paste;
             menuEditPaste.Name = "menuEditPaste";
             menuEditPaste.ShortcutKeys = Keys.Control | Keys.V;
-            menuEditPaste.Size = new Size(144, 22);
+            menuEditPaste.Size = new Size(147, 22);
             menuEditPaste.Text = "&Paste";
             menuEditPaste.Click += menuEditPaste_Click;
             // 
             // toolStripMenuItem4
             // 
             toolStripMenuItem4.Name = "toolStripMenuItem4";
-            toolStripMenuItem4.Size = new Size(141, 6);
+            toolStripMenuItem4.Size = new Size(144, 6);
             // 
             // menuEditFormat
             // 
             menuEditFormat.Image = Properties.Resources.font1;
             menuEditFormat.Name = "menuEditFormat";
-            menuEditFormat.Size = new Size(144, 22);
+            menuEditFormat.Size = new Size(147, 22);
             menuEditFormat.Text = "&Format";
             menuEditFormat.Click += menuEditFormat_Click;
+            // 
+            // addCategoryToolStripMenuItem
+            // 
+            addCategoryToolStripMenuItem.Image = Properties.Resources._new;
+            addCategoryToolStripMenuItem.Name = "addCategoryToolStripMenuItem";
+            addCategoryToolStripMenuItem.Size = new Size(147, 22);
+            addCategoryToolStripMenuItem.Text = "Add Category";
+            addCategoryToolStripMenuItem.Click += addCategoryToolStripMenuItem_Click;
             // 
             // menuView
             // 
@@ -256,6 +265,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(790, 450);
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
@@ -298,5 +308,6 @@
         private ToolStripSeparator toolStripMenuItem7;
         private OpenFileDialog openFileDialog;
         private System.Windows.Forms.Timer reminderTimer;
+        private ToolStripMenuItem addCategoryToolStripMenuItem;
     }
 }
